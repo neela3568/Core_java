@@ -1,0 +1,16 @@
+package com.Neela;
+
+public class Work14 {
+
+	public static void main(String[] args) {
+		int i;
+		for (i = 1; i <= 3; i++) {
+			for (int j = i; j <= 3; j++) {
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+
+	}
+
+}

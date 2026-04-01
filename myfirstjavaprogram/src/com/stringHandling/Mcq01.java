@@ -1,0 +1,36 @@
+package com.stringHandling;
+
+import java.util.Scanner;
+
+public class Mcq01 {
+
+	public static void main(String[] args) {
+		System.out.println("Main method started");
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a string");
+		String str = sc.next();
+
+		int[] arr = new int[127];
+
+		for (int i = 0; i < str.length(); i++) {
+			arr[str.charAt(i)] = arr[str.charAt(i)] + 1;
+
+		}
+
+		int max = -1;
+		char c = ' ';
+
+		for (int i = 0; i < str.length(); i++) {
+			if (max < arr[str.charAt(i)]) {
+				max = arr[str.charAt(i)];
+				c = str.charAt(i);
+
+			}
+
+		}
+		System.out.println("maximun character =" + max);
+		System.out.println("many times occures = " + c);
+
+	}
+
+}
